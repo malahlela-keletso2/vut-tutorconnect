@@ -1,0 +1,5 @@
+Options -Indexes
+
+<FilesMatch "^(smtp_config\.php|smtp_mailer\.php|smtp_error\.log|bookings\.csv|smtp_test\.php)$">
+    Require all denied
+</FilesMatch>

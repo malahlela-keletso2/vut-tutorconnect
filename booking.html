@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a tutoring session at VUT TutorConnect - Easy online booking form for all courses and year levels">
+    <meta name="keywords" content="book tutor, VUT tutoring session, academic support booking">
+    <meta name="author" content="VUT TutorConnect">
+    <title>Book a Tutor - VUT TutorConnect</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link" aria-label="TutorConnect - go to home page">
+                <img src="images/favicon-32x32.png" alt="TutorConnect logo" width="32" height="32">
+            </a>
+            <div class="logo-text">
+                <h1>VUT TutorConnect</h1>
+                <p>Connecting you to success</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="booking.html" class="active">Book Tutor</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Book a Tutoring Session</h1>
+            <p>Fill in the form below to schedule your tutoring session. We will match you with a qualified tutor for your specific course.</p>
+        </section>
+
+        <section class="form-section">
+            <form action="booking.php" method="POST" class="booking-form" id="booking-form">
+                <fieldset>
+                    <legend>Student Information</legend>
+
+                    <div class="form-group">
+                        <label for="student-name">Full Name:</label>
+                        <input type="text" id="student-name" name="student-name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-number">Student Number:</label>
+                        <input type="text" id="student-number" name="student-number" required placeholder="221234567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Student Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="studentNo@edu.vut.ac.za">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="071 669 3108">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Details</legend>
+
+                    <div class="form-group">
+                        <label for="faculty">Faculty:</label>
+                        <select id="faculty" name="faculty" required>
+                            <option value="">Select Faculty</option>
+                            <option value="Applied and Computer Sciences">Applied and Computer Sciences</option>
+                            <option value="Engineering and Technology">Engineering and Technology</option>
+                            <option value="Human Sciences">Human Sciences</option>
+                            <option value="Management Sciences">Management Sciences</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year-level">Year Level:</label>
+                        <select id="year-level" name="year-level" required>
+                            <option value="">Select Year</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course-code">Course Code:</label>
+                        <input type="text" id="course-code" name="course-code" required placeholder="e.g., ASPLX1C">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="session-type">Session Type:</label>
+                        <select id="session-type" name="session-type" required>
+                            <option value="">Select Session Type</option>
+                            <option value="One-on-One Session">One-on-One Session</option>
+                            <option value="Group Session (2-5 students)">Group Session (2-5 students)</option>
+                            <option value="Exam Review Session">Exam Review Session</option>
+                            <option value="Assignment Help">Assignment Help</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Scheduling Preferences</legend>
+
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date:</label>
+                        <input type="date" id="preferred-date" name="preferred-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Time:</label>
+                        <select id="preferred-time" name="preferred-time" required>
+                            <option value="">Select Time Slot</option>
+                            <option value="08:00">08:00 - 10:00</option>
+                            <option value="10:00">10:00 - 12:00</option>
+                            <option value="12:00">12:00 - 14:00</option>
+                            <option value="14:00">14:00 - 16:00</option>
+                            <option value="16:00">16:00 - 18:00</option>
+                            <option value="18:00">18:00 - 20:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Notes:</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Describe specific topics you need help with..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Book Session</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="animated-section">
+            <h2>Our Tutoring Process</h2>
+            <div class="animation-container">
+                <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Animated studying illustration" class="animated-image">
+                <p class="caption">Learning made simple and effective</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 VUT TutorConnect. All rights reserved.</p>
+            <p>Vaal University of Technology | Andries Potgieter Boulevard | Vanderbijlpark</p>
+            <p>Email: <a href="mailto:tutorconnect82@gmail.com">tutorconnect82@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

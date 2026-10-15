@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact VUT TutorConnect - Get in touch for tutoring inquiries and support">
+    <meta name="keywords" content="contact VUT tutoring, tutoring support, Vaal University of Technology help">
+    <meta name="author" content="VUT TutorConnect">
+    <title>Contact Us - VUT TutorConnect</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link" aria-label="TutorConnect - go to home page">
+                <img src="images/favicon-32x32.png" alt="TutorConnect logo" width="32" height="32">
+            </a>
+            <div class="logo-text">
+                <h1>VUT TutorConnect</h1>
+                <p>Connecting you to success</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="booking.html">Book Tutor</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Have questions? We are here to help. Reach out to us through any of the channels below.</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:tutorconnect82@gmail.com">tutorconnect82@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>016 950 9000</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Student Support Centre<br>
+                        Vaal University of Technology<br>
+                        Andries Potgieter Boulevard<br>
+                        Vanderbijlpark, 1900</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 08:00 - 17:00<br>
+                        Saturday: 09:00 - 13:00<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form action="contact.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Name:</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email:</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="external-resources">
+            <h2>Additional Resources</h2>
+            <p>Visit the official Vaal University of Technology website for more information about courses, admissions, and campus life.</p>
+                <a href="https://www.vut.ac.za" target="_blank" class="external-link">Visit VUT Official Website</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 VUT TutorConnect. All rights reserved.</p>
+            <p>Vaal University of Technology | Andries Potgieter Boulevard | Vanderbijlpark</p>
+            <p>Email: <a href="mailto:tutorconnect82@gmail.com">tutorconnect82@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

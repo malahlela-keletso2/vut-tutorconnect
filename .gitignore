@@ -1,0 +1,8 @@
+smtp_config.php
+smtp_error.log
+bookings.csv
+smtp_test.php
+
+Thumbs.db
+.DS_Store
+desktop.ini
