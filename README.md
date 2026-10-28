@@ -14,7 +14,7 @@ A tutoring website for Vaal University of Technology students. Browse courses, b
 4. Open the XAMPP Control Panel and click **Start** next to **Apache**.
 5. Open your browser and go to:
 
-   **http://localhost/VutCourseCorrect/**
+   **http://localhost/vut-tutorconnect/**
 
 That's it!
 
