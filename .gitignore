@@ -1,0 +1,5 @@
+smtp_config.php
+bookings.csv
+messages.csv
+smtp_error.log
+.DS_Store

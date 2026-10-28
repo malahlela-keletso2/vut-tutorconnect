@@ -1,0 +1,3 @@
+<FilesMatch "^(smtp_config\.php|smtp_mailer\.php|smtp_error\.log|bookings\.csv|messages\.csv|test_email\.php)$">
+    Require all denied
+</FilesMatch>

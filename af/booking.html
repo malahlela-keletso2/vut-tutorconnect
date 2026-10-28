@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bespreek &#x27;n tutoringsessie by VUT CourseCorrect - Maklike aanlyn besprekingsvorm vir alle kursusse en jaarvlakke">
+    <meta name="keywords" content="VUT tutoring, Vaal University of Technology, student tutoring, academic support, VUT courses">
+    <meta name="author" content="VUT CourseCorrect">
+    <title>Bespreek &#x27;n Tutor - VUT CourseCorrect</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@600;700&amp;display=swap">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Spring na hoofinhoud</a>
+    <header class="banner">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link" aria-label="CourseCorrect - gaan na tuisblad">
+                <img src="../images/favicon-32x32.png" alt="CourseCorrect-logo" width="32" height="32">
+            </a>
+            <div class="logo-text">
+                <p class="site-name">VUT CourseCorrect</p>
+                <p class="tagline">Bemagtig studente sedert 2026</p>
+            </div>
+            <a class="lang-switch" href="../booking.html" hreflang="en" lang="en">English</a>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main">
+        <ul>
+            <li><a href="index.html">Tuis</a></li>
+            <li class="has-dropdown"><a href="courses.html">Kursusse</a>
+                <ul class="dropdown"><li><a href="courses.html#applied">Toegepaste en Rekenaarwetenskappe</a></li><li><a href="courses.html#engineering">Ingenieurswese en Tegnologie</a></li><li><a href="courses.html#humanities">Geesteswetenskappe</a></li><li><a href="courses.html#management">Bestuurswetenskappe</a></li></ul>
+            </li>
+            <li><a href="booking.html" class="active">Bespreek Tutor</a></li>
+            <li class="has-dropdown"><a href="about.html">Oor Ons</a>
+                <ul class="dropdown">
+                    <li><a href="about.html">Oor Ons</a></li>
+                    <li><a href="../styleguide.html" hreflang="en" lang="en">Stylgids</a></li>
+                    <li><a href="sitemap.html">Werfkaart</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Kontak Ons</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1>Bespreek 'n Tutoringsessie</h1>
+            <p>Vul die vorm hieronder in om jou tutoringsessie te skeduleer. Ons pas jou by 'n gekwalifiseerde tutor vir jou spesifieke kursus.</p>
+        </section>
+
+        <section class="form-section">
+            <form action="../booking.php" method="POST" class="booking-form" id="booking-form">
+                <input type="hidden" name="lang" value="af">
+                <fieldset>
+                    <legend>Studenteinligting</legend>
+                    <div class="form-group">
+                        <label for="student-name">Volle Naam:</label>
+                        <input type="text" id="student-name" name="student-name" required autocomplete="name" placeholder="Voer jou volle naam in">
+                    </div>
+                    <div class="form-group">
+                        <label for="student-number">Studentenommer:</label>
+                        <input type="text" id="student-number" name="student-number" required inputmode="numeric" placeholder="221234567">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Studente-e-pos:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="studentNo@edu.vut.ac.za">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Foonnommer:</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="071 669 3108">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kursusbesonderhede</legend>
+                    <div class="form-group">
+                        <label for="faculty">Fakulteit:</label>
+                        <select id="faculty" name="faculty" required>
+                            <option value="">Kies Fakulteit</option>
+                            <option value="Applied and Computer Sciences">Toegepaste en Rekenaarwetenskappe</option><option value="Engineering and Technology">Ingenieurswese en Tegnologie</option><option value="Humanities">Geesteswetenskappe</option><option value="Management Sciences">Bestuurswetenskappe</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year-level">Jaarvlak:</label>
+                        <select id="year-level" name="year-level" required>
+                            <option value="">Kies Jaar</option>
+                            <option value="1st Year">1ste Jaar</option>
+                            <option value="2nd Year">2de Jaar</option>
+                            <option value="3rd Year">3de Jaar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="course-code">Kursuskode:</label>
+                        <input type="text" id="course-code" name="course-code" required placeholder="e.g., AIWEX3A">
+                    </div>
+                    <div class="form-group">
+                        <label for="session-type">Sessietipe:</label>
+                        <select id="session-type" name="session-type" required>
+                            <option value="">Kies Sessietipe</option>
+                            <option value="One-on-One Session">Een-tot-een-sessie</option>
+                            <option value="Group Session (2-5 students)">Groepsessie (2-5 studente)</option>
+                            <option value="Exam Review Session">Eksamenhersieningsessie</option>
+                            <option value="Assignment Help">Opdraghulp</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skeduleringsvoorkeure</legend>
+                    <div class="form-group">
+                        <label for="preferred-date">Voorkeurdatum:</label>
+                        <input type="date" id="preferred-date" name="preferred-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-time">Voorkeurtyd:</label>
+                        <select id="preferred-time" name="preferred-time" required>
+                            <option value="">Kies Tydgleuf</option>
+                            <option value="08:00">08:00 - 10:00</option>
+                            <option value="10:00">10:00 - 12:00</option>
+                            <option value="12:00">12:00 - 14:00</option>
+                            <option value="14:00">14:00 - 16:00</option>
+                            <option value="16:00">16:00 - 18:00</option>
+                            <option value="18:00">18:00 - 20:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Bykomende Notas:</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Beskryf die spesifieke onderwerpe waarmee jy hulp nodig het..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Bespreek Sessie</button>
+                    <button type="reset" class="reset-btn">Maak Vorm Leeg</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="animated-section">
+            <h2>Ons Tutoringproses</h2>
+            <div class="animation-container">
+                <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Geanimeerde studie-illustrasie" class="animated-image" loading="lazy">
+                <p class="caption">Leer eenvoudig en effektief gemaak</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-name"><strong>VUT CourseCorrect</strong></p>
+            <address>
+                <p>Studenteondersteuningssentrum, Vaal Universiteit van Tegnologie, Andries Potgieter-boulevard, Vanderbijlpark, 1900</p>
+                <p>Foon: <a href="tel:+27169509000">016 950 9000</a> | E-pos: <a href="mailto:coursecorrect40@gmail.com">coursecorrect40@gmail.com</a></p>
+            </address>
+            <p class="footer-social">Volg ons:
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> |
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> |
+                <a href="https://x.com/" target="_blank" rel="noopener">X</a> |
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+            <p>&copy; 2026 VUT CourseCorrect. Alle regte voorbehou.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+</body>
+</html>
